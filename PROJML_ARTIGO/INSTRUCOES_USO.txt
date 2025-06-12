@@ -1,0 +1,48 @@
+=== APLICAÇÃO SHINY - PREDIÇÃO EÓLICA ===
+
+🎯 COMO EXECUTAR A APLICAÇÃO:
+
+1. INSTALAR DEPENDÊNCIAS (primeiro uso):
+   Rscript install_dependencies.R
+
+2. EXECUTAR A APLICAÇÃO:
+   Rscript run_app.R
+
+3. ACESSAR NO NAVEGADOR:
+   http://127.0.0.1:3838
+
+=== PROBLEMA CORRIGIDO ===
+
+❌ ERRO ORIGINAL: readonly = TRUE não é suportado em textInput()
+✅ SOLUÇÃO: Removido readonly e adicionado CSS + JavaScript para campos somente leitura
+
+=== FUNCIONALIDADES IMPLEMENTADAS ===
+
+✅ API convertida para aplicação Shiny
+✅ Descrições detalhadas em todas as variáveis de entrada
+✅ Autocomplete inteligente para nomes de usinas
+✅ Preenchimento automático de subsistema e estado (com visual readonly)
+✅ Três tipos de gráficos interativos:
+   - Gauge de medição
+   - Comparação histórica  
+   - Análise de sensibilidade
+✅ Interface moderna e responsiva
+✅ 136 usinas disponíveis para seleção
+
+=== EXEMPLO DE USO ===
+
+1. Digite "Caetité" no campo de usina
+2. Sistema preenche automaticamente: BA (estado) e NE (subsistema)
+3. Ajuste os parâmetros meteorológicos
+4. Clique em "Fazer Predição"
+5. Visualize os resultados nos 3 gráficos interativos
+
+=== ARQUIVOS CRIADOS ===
+
+- shiny.R (aplicação principal - CORRIGIDA)
+- run_app.R (script de execução)
+- install_dependencies.R (instalação de pacotes)
+- plant_mapping.rds (mapeamento usinas)
+- README_SHINY.md (documentação detalhada)
+
+Leia o README_SHINY.md para documentação completa! 
